@@ -31,7 +31,7 @@ class Contact_model extends CI_Model {
 			return $this->db->affected_rows();
 		} else {
 			$this->db->insert($this->table, $data);
-			return $this->db->last_id();
+			return $this->db->insert_id();
 		}
 	}
 	
